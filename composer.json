@@ -1,0 +1,29 @@
+{
+  "name": "phpcyy/herenow",
+  "description": "a professial blog system.",
+  "type": "project",
+  "require": {
+    "nikic/fast-route": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Http\\": "app/Http",
+      "Controller\\": "app/Controller",
+      "Exception\\": "app/Exception",
+      "Service\\": "app/Service",
+      "Model\\": "app/Model",
+      "Library\\": "app/Library"
+    },
+    "files": [
+      "app/App.php"
+    ]
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "phpcyy",
+      "email": "phpcyy@163.com"
+    }
+  ],
+  "minimum-stability": "stable"
+}
