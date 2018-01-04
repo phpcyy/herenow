@@ -4,5 +4,8 @@ try {
     $app = new App();
     $app->dispatch()->response();
 } catch (Throwable $throwable) {
-    echo $throwable->getMessage();
+    (new \Http\Response([
+        "code" => $throwable->getCode(),
+        "message" => $throwable->getMessage()
+    ]))->send();
 }
