@@ -4,6 +4,7 @@ namespace Model;
 class Model
 {
     private static $connection;
+    protected $table;
 
     /**
      * @return \PDO
@@ -78,5 +79,30 @@ class Model
             $sql .= " $limit";
         }
         return $sql;
+    }
+
+    public static function delete()
+    {
+
+    }
+
+    public static function destroy($id)
+    {
+
+    }
+
+    public static function fetchAll()
+    {
+
+    }
+
+    public static function update()
+    {
+
+    }
+
+    public function save()
+    {
+
     }
 }

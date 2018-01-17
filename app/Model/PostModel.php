@@ -3,7 +3,9 @@
 namespace Model;
 class PostModel extends Model
 {
-    public static function getPosts($user, $limit = 10, $offset = 0, $search = "")
+    protected $table = "articles";
+
+    public static function get($user, $limit = 10, $offset = 0, $search = "")
     {
         $sql = "select `id`, `author_id`, `content`, `created_at`, `updated_at`, `looktime` from `articles`";
         $where = [];
